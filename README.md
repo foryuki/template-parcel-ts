@@ -17,7 +17,8 @@ npm i -g sao
 ### From git
 
 ```bash
-sao foryuki/template-parcel-ts my-project --update // force using latest
+cd my-project
+sao foryuki/template-parcel-ts --update // force using latest
 ```
 
 ## License

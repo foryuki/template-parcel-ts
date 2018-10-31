@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ok 1`] = `
+Array [
+  ".babelrc",
+  ".editorconfig",
+  ".gitattributes",
+  ".gitignore",
+  ".npmrc",
+  ".postcssrc",
+  ".prettierrc",
+  "LICENSE",
+  "README.md",
+  "commitlint.config.js",
+  "index.html",
+  "package.json",
+  "src/assets/meme.png",
+  "src/component/Title.tsx",
+  "src/component/styles.scss",
+  "src/index.tsx",
+  "src/styles/styles.scss",
+  "src/types/global.d.ts",
+  "tsconfig.json",
+  "tslint.json",
+]
+`;
+
+exports[`test ok: .babelrc 1`] = `
+"{
+  \\"presets\\": [\\"env\\", \\"react\\"]
+}
+"
+`;
+
+exports[`test ok: .postcssrc 1`] = `
+"{
+  \\"modules\\": true,
+  \\"plugins\\": {
+    \\"autoprefixer\\": {
+      \\"grid\\": true
+    },
+    \\"postcss-modules\\": {
+      \\"generateScopedName\\": \\"[name]_[local]_[hash:base64:5]\\"
+    }
+  }
+}
+"
+`;
+
+exports[`test ok: README.md 1`] = `
+"# mockName
+
+## Installation
+\`\`\`
+// with npm
+npm i
+
+// with yarn
+yarn
+\`\`\`
+
+## Run
+\`\`\`bash
+npm run start
+\`\`\`
+
+## License
+
+MIT &copy; mockUsername
+"
+`;
+
+exports[`test ok: tsconfig.json 1`] = `
+"{
+  \\"compilerOptions\\": {
+    \\"baseUrl\\": \\".\\",
+    \\"outDir\\": \\"dist\\",
+    \\"module\\": \\"esnext\\",
+    \\"target\\": \\"es5\\",
+    \\"lib\\": [\\"es6\\", \\"dom\\"],
+    \\"sourceMap\\": true,
+    \\"allowJs\\": true,
+    \\"jsx\\": \\"react\\",
+    \\"moduleResolution\\": \\"node\\",
+    \\"rootDir\\": \\"src\\",
+    \\"forceConsistentCasingInFileNames\\": true,
+    \\"noImplicitReturns\\": true,
+    \\"noImplicitThis\\": true,
+    \\"noImplicitAny\\": true,
+    \\"importHelpers\\": true,
+    \\"strictNullChecks\\": true,
+    \\"suppressImplicitAnyIndexErrors\\": true,
+    \\"noUnusedLocals\\": true,
+    \\"allowSyntheticDefaultImports\\": true,
+    \\"esModuleInterop\\": true
+  },
+  \\"exclude\\": [
+    \\"node_modules\\"
+  ]
+}
+"
+`;
