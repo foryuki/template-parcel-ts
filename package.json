@@ -1,25 +1,20 @@
 {
   "name": "template-parcel-ts",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "my tremendous SAO template",
   "repository": {
-    "url": "foryuki/template-parcel-ts",
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/foryuki/template-parcel-ts.git"
   },
-  "author": "foryuki <foryuki@outlook.com> (github.com/foryuki)",
+  "author": "foryuki <foryuki@outlook.com>",
   "license": "MIT",
-  "files": [
-    "sao.js",
-    "template"
-  ],
   "scripts": {
-    "test": "jest test.js --env=node"
-  },
-  "dependencies": {
-    "superb": "^1.3.0"
+    "test": "jest test.js --env=node",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "jest": "^23.6.0",
-    "sao": "^0.22.1"
+    "sao": "^0.22.1",
+    "semantic-release": "^15.10.6"
   }
 }

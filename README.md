@@ -2,6 +2,8 @@
 
 > my astonishing SAO template for react project with typescript and parcel
 
+[![CircleCI](https://circleci.com/gh/foryuki/template-parcel-ts.svg?style=svg)](https://circleci.com/gh/foryuki/template-parcel-ts)
+
 ## Installation
 
 Install [SAO](https://github.com/egoist/sao) first.
