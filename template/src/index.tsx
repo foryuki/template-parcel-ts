@@ -1,13 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Menu from './component/Menu'
+import Title from './component/Title'
+
+import imageUrl from './assets/meme.png'
+import styles from './styles/styles.scss'
+
 class App extends React.Component<{}, {}> {
   render() {
     return (
       <div>
-        <Menu />
-        <div>Rice here</div>
+        <Title />
+        <p className={styles.content}>have fun 😜</p>
+        <img src={imageUrl} alt='meme' />
       </div>
     )
   }
