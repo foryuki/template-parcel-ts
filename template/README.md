@@ -11,6 +11,11 @@ npm i
 yarn
 ```
 
+## Run
+```bash
+npm run start
+```
+
 ## License
 
 MIT &copy; <%= username %>

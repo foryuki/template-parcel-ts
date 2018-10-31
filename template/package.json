@@ -1,14 +1,13 @@
 {
-  "name": "rice",
-  "version": "1.0.0",
-  "description": "",
+  "name": "<%= name %>",
+  "description": "<%= description %>",
   "main": "index.js",
   "scripts": {
     "type-check": "tsc --noEmit",
     "start": "parcel -p 5200 index.html",
     "lint": "tslint src/**/*.ts{,x}"
   },
-  "author": "foryukiz",
+  "author": "<%= username %> <<%= email %>>",
   "license": "MIT",
   "husky": {
     "hooks": {
