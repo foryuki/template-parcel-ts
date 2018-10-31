@@ -1,3 +1,5 @@
+const { spawnSync } = require('child_process')
+
 module.exports = {
   prompts: {
     name: {
@@ -27,7 +29,18 @@ module.exports = {
     'gitignore': '.gitignore'
   },
   showTip: true,
-  gitInit: (answers) => answers.gitInit,
+  gitInit: false,
   installDependencies: false,
   npmInstall: false,
+  post (ctx) {
+    if (ctx.answers.gitInit) {
+      [
+        ['git', ['init']],
+      ].forEach(([command, args]) => {
+        spawnSync(command, args, {
+          stdio: 'inherit'
+        })
+      })
+    }
+  }
 }

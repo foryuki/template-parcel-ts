@@ -1,15 +1,12 @@
 # template-parcel-ts
 
-> my astonishing SAO template for typescript project with parcel
-
+> my astonishing SAO template for react project with typescript and parcel
 
 ## Installation
 
 Install [SAO](https://github.com/egoist/sao) first.
 
 ```bash
-yarn global add sao
-# or
 npm i -g sao
 ```
 
@@ -18,7 +15,8 @@ npm i -g sao
 
 ```bash
 cd my-project
-sao foryuki/template-parcel-ts --update // force using latest
+//  add --update flag to using latest version
+sao foryuki/template-parcel-ts --update
 ```
 
 ## License
