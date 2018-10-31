@@ -1,16 +1,14 @@
 # <%= name %>
-
 <% if (description) { %>
 > <%= description %>
 <% } %>
-
 ## Installation
 ```
 // with npm
-npm install <%= name %>
+npm i
 
 // with yarn
-yarn add <%= name %>
+yarn
 ```
 
 ## License
