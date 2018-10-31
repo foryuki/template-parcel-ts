@@ -22,6 +22,13 @@ cd my-project
 sao foryuki/template-parcel-ts --update
 ```
 
+### From npm
+
+```bash
+cd my-project
+sao template-parcel-ts --update
+```
+
 ## License
 
 MIT &copy; [foryuki](github.com/foryuki)
