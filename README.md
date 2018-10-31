@@ -1,6 +1,6 @@
 # template-parcel-ts
 
-> my astonishing SAO template for react project with typescript and parcel
+> my astonishing SAO template for React project with typescript and parcel
 
 [![CircleCI](https://circleci.com/gh/foryuki/template-parcel-ts.svg?style=svg)](https://circleci.com/gh/foryuki/template-parcel-ts)
 [![Version](https://img.shields.io/npm/v/template-parcel-ts.svg)](https://www.npmjs.com/package/template-parcel-ts)
