@@ -5,7 +5,9 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "start": "parcel -p 5200 index.html",
-    "lint": "tslint src/**/*.ts{,x}"
+    "lint": "tslint src/**/*.ts{,x}",
+    "clean": "rimraf dist",
+    "build": "npm run type-check && NODE_ENV=production parcel build index.html"
   },
   "author": "<%= username %> <<%= email %>>",
   "license": "MIT",
