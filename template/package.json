@@ -18,7 +18,7 @@
     }
   },
   "dependencies": {
-    "@types/react": "^16.4.18",
+    "or-button": "^1.1.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "sass": "^1.14.3",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-angular": "^7.1.2",
+    "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "autoprefixer": "^9.3.1",
     "babel-core": "^6.26.3",
