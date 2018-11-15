@@ -20,7 +20,7 @@ describe('test', () => {
     expect(pkg.author).toBe('mockUsername <mockmail@mymail.com>')
     expect(pkg.license).toBe('MIT')
 
-    expect(stream.fileContents('.postcssrc')).toMatchSnapshot('.postcssrc')
+    expect(stream.fileContents('.postcssrc.js')).toMatchSnapshot('.postcssrc.js')
     expect(stream.fileContents('README.md')).toMatchSnapshot('README.md')
     expect(stream.fileContents('.babelrc')).toMatchSnapshot('.babelrc')
     expect(stream.fileContents('tsconfig.json')).toMatchSnapshot('tsconfig.json')

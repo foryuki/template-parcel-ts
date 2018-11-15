@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import Title from './component/Title'
 
 import imageUrl from './assets/meme.png'
-import styles from './styles/styles.scss'
+import styles from './styles.scss'
 
 class App extends React.Component<{}, {}> {
   render() {

@@ -7,7 +7,7 @@ Array [
   ".gitattributes",
   ".gitignore",
   ".npmrc",
-  ".postcssrc",
+  ".postcssrc.js",
   ".prettierrc",
   "LICENSE",
   "README.md",
@@ -16,9 +16,10 @@ Array [
   "package.json",
   "src/assets/meme.png",
   "src/component/Title.tsx",
+  "src/component/styles.global.scss",
   "src/component/styles.scss",
   "src/index.tsx",
-  "src/styles/styles.scss",
+  "src/styles.scss",
   "src/types/global.d.ts",
   "tsconfig.json",
   "tslint.json",
@@ -32,15 +33,17 @@ exports[`test ok: .babelrc 1`] = `
 "
 `;
 
-exports[`test ok: .postcssrc 1`] = `
-"{
-  \\"modules\\": true,
-  \\"plugins\\": {
-    \\"autoprefixer\\": {
-      \\"grid\\": true
+exports[`test ok: .postcssrc.js 1`] = `
+"module.exports = {
+  modules: true,
+  plugins: {
+    autoprefixer: {
+      grid: true
     },
-    \\"postcss-modules\\": {
-      \\"generateScopedName\\": \\"[name]_[local]_[hash:base64:5]\\"
+    'postcss-modules': {
+      generateScopedName: '[name]_[local]_[hash:base64:5]',
+      scopeBehaviour: 'local',
+      globalModulePaths: [/styles\\\\.global\\\\.scss/]
     }
   }
 }
