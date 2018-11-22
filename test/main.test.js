@@ -1,13 +1,11 @@
 const sao = require('sao')
 const path = require('path')
 
-const template = {
-  fromPath: path.join(__dirname, '..')
-}
+const generator = path.join(__dirname, '..')
 
 describe('test', () => {
   it('ok', async () => {
-    const stream = await sao.mockPrompt(template, {
+    const stream = await sao.mock({ generator }, {
       name: 'mockName',
       username: 'mockUsername',
       email: 'mockmail@mymail.com'
@@ -15,15 +13,15 @@ describe('test', () => {
 
     expect(stream.fileList).toMatchSnapshot()
 
-    const pkg = JSON.parse(stream.fileContents('package.json'))
-    expect(pkg.name).toBe('mockName')
-    expect(pkg.author).toBe('mockUsername <mockmail@mymail.com>')
+    const pkg = JSON.parse(await stream.readFile('package.json'))
+    expect(pkg.name).toBe('mockname')
+    expect(pkg.author).toBe('mockusername <mockmail@mymail.com>')
     expect(pkg.license).toBe('MIT')
 
-    expect(stream.fileContents('.postcssrc.js')).toMatchSnapshot('.postcssrc.js')
-    expect(stream.fileContents('README.md')).toMatchSnapshot('README.md')
-    expect(stream.fileContents('.babelrc')).toMatchSnapshot('.babelrc')
-    expect(stream.fileContents('tsconfig.json')).toMatchSnapshot('tsconfig.json')
+    expect(await stream.readFile('.postcssrc.js')).toMatchSnapshot('.postcssrc.js')
+    expect(await stream.readFile('README.md')).toMatchSnapshot('README.md')
+    expect(await stream.readFile('.babelrc')).toMatchSnapshot('.babelrc')
+    expect(await stream.readFile('tsconfig.json')).toMatchSnapshot('tsconfig.json')
   })
 })
 

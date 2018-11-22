@@ -14,6 +14,7 @@ Array [
   "commitlint.config.js",
   "index.html",
   "package.json",
+  "src/.DS_Store",
   "src/assets/meme.png",
   "src/component/Title.tsx",
   "src/component/styles.global.scss",
@@ -51,7 +52,7 @@ exports[`test ok: .postcssrc.js 1`] = `
 `;
 
 exports[`test ok: README.md 1`] = `
-"# mockName
+"# mockname
 
 ## Installation
 \`\`\`
@@ -69,7 +70,7 @@ npm run start
 
 ## License
 
-MIT &copy; mockUsername
+MIT &copy; mockusername
 "
 `;
 
