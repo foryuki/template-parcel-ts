@@ -51,7 +51,7 @@ exports[`test ok: .postcssrc.js 1`] = `
 `;
 
 exports[`test ok: README.md 1`] = `
-"# mockName
+"# mockname
 
 ## Installation
 \`\`\`
@@ -69,7 +69,7 @@ npm run start
 
 ## License
 
-MIT &copy; mockUsername
+MIT &copy; mockusername
 "
 `;
 
