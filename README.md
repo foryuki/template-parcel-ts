@@ -2,7 +2,7 @@
 
 > my astonishing SAO template for React project with typescript and parcel
 
-[![CircleCI](https://circleci.com/gh/foryuki/template-parcel-ts.svg?style=svg)](https://circleci.com/gh/foryuki/template-parcel-ts)
+[![CircleCI](https://circleci.com/gh/template-hub/template-parcel-ts.svg?style=svg)](https://circleci.com/gh/template-hub/template-parcel-ts)
 [![Version](https://img.shields.io/npm/v/template-parcel-ts.svg)](https://www.npmjs.com/package/template-parcel-ts)
 
 ## Installation
@@ -19,7 +19,7 @@ npm i -g sao
 ```bash
 cd my-project
 //  add --update flag to using latest version
-sao foryuki/template-parcel-ts --update
+sao template-hub/template-parcel-ts --update
 ```
 
 ### From npm
