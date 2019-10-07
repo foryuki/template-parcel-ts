@@ -29,6 +29,9 @@ cd my-project
 sao template-parcel-ts --update
 ```
 
+## Development
+- 如果更新了template 中的配置文件，需要执行 `npm run test -- -u` 更新 snapshot。
+
 ## License
 
 MIT &copy; [foryuki](github.com/foryuki)
